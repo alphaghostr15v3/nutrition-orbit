@@ -27,6 +27,8 @@ class NutritionOrdersTable
                     ->searchable(),
                 TextColumn::make('brand')
                     ->searchable(),
+                TextColumn::make('category_name')
+                    ->searchable(),
                 TextColumn::make('quantity')
                     ->sortable(),
                 TextColumn::make('order_status')

@@ -14,6 +14,7 @@ class NutritionOrder extends Model
         'phone_number',
         'product_name',
         'brand',
+        'category_name',
         'quantity',
         'order_status',
         'description',

@@ -29,6 +29,10 @@ class NutritionOrderForm
                             ->options(\App\Models\Brand::query()->pluck('name', 'name'))
                             ->searchable()
                             ->preload(),
+                        \Filament\Forms\Components\Select::make('category_name')
+                            ->options(\App\Models\Category::query()->pluck('name', 'name'))
+                            ->searchable()
+                            ->preload(),
                         TextInput::make('quantity')
                             ->numeric()
                             ->default(1)
