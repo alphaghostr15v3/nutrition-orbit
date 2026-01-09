@@ -25,7 +25,10 @@ class NutritionOrderForm
                             ->tel(),
                         TextInput::make('product_name')
                             ->required(),
-                        TextInput::make('brand'),
+                        \Filament\Forms\Components\Select::make('brand')
+                            ->options(\App\Models\Brand::query()->pluck('name', 'name'))
+                            ->searchable()
+                            ->preload(),
                         TextInput::make('quantity')
                             ->numeric()
                             ->default(1)
