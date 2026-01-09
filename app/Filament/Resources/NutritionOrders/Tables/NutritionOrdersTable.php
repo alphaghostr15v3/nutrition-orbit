@@ -23,6 +23,14 @@ class NutritionOrdersTable
                     ->sortable(),
                 TextColumn::make('phone_number')
                     ->searchable(),
+                TextColumn::make('address')
+                    ->searchable(),
+                TextColumn::make('city')
+                    ->searchable(),
+                TextColumn::make('state')
+                    ->searchable(),
+                TextColumn::make('pin_code')
+                    ->searchable(),
                 TextColumn::make('product_name')
                     ->searchable(),
                 TextColumn::make('brand')

@@ -23,6 +23,10 @@ class NutritionOrderForm
                             ->required(),
                         TextInput::make('phone_number')
                             ->tel(),
+                        TextInput::make('address'),
+                        TextInput::make('city'),
+                        TextInput::make('state'),
+                        TextInput::make('pin_code'),
                         TextInput::make('product_name')
                             ->required(),
                         \Filament\Forms\Components\Select::make('brand')
